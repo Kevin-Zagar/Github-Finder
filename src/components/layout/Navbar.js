@@ -1,16 +1,28 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 import styled from 'styled-components';
 
-const Nav = styled.nav`
-background-color: 
-`
+const Nav = styled.div `
+background: #333;
+color: #fff;
+padding: 20px;
+overflow: auto
+`;
 
+const NavLeft = styled.div`
+width: 33.333%;
+text-align: center;
+`;
+ 
 export class Navbar extends Component {
     render() {
         return (
-            <Nav className='navbar'>
-                <h1>Hello</h1>
-            </Nav>
+            <div>
+                <Nav>
+                    <NavLeft>
+                      Github Finder
+                    </NavLeft>
+                </Nav>
+            </div>
         )
     }
 }
