@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import { FaGithub } from "react-icons/fa";
+
 
 const Nav = styled.div `
-background: #333;
+background: peru;
 color: #fff;
 padding: 20px;
 overflow: auto
@@ -16,14 +18,12 @@ text-align: center;
 export class Navbar extends Component {
     render() {
         return (
-            <div>
-                <Nav>
+                <Nav className="navbar">
                     <NavLeft>
-                      Github Finder
+                    <FaGithub /> Github Finder
                     </NavLeft>
                 </Nav>
-            </div>
-        )
+        );
     }
 }
 
