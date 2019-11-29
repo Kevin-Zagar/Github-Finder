@@ -7,7 +7,9 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Navbar></Navbar>
+        <Navbar title='Github Finder'>
+          
+        </Navbar>
       </div>
     )
   }
