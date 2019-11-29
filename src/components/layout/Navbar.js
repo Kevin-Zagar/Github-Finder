@@ -14,7 +14,6 @@ const NavLeft = styled.div`
 width: 33.333%;
 text-align: center;
 font-size: 25px;
-font-weight: bold;
 `;
  
 export class Navbar extends Component {
@@ -22,7 +21,7 @@ export class Navbar extends Component {
         return (
                 <Nav className="navbar">
                     <NavLeft>
-                     <FaGithub size={23}></FaGithub> {this.props.title}
+                    <i class="fab fa-github"></i> {this.props.title}
                     </NavLeft>  
                 </Nav>
         );
