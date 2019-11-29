@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import { FaGithub } from "react-icons/fa";
-
+import PropTypes from 'prop-types';
 
 const Nav = styled.div `
 background: peru;
@@ -17,11 +16,22 @@ font-size: 25px;
 `;
  
 export class Navbar extends Component {
+    // Default output
+    static defaultProps = {
+        title: 'Github Finder',
+        icon: 'fab fa-github fa-lg'
+    };
+    // Type checking
+    static propTypes = {
+        title: PropTypes.string.isRequired,
+        icon: PropTypes.string.isRequired
+    };
+
     render() {
         return (
-                <Nav className="navbar">
+                <Nav className='navbar'>
                     <NavLeft>
-                    <i class="fab fa-github"></i> {this.props.title}
+                       <i class={this.props.icon}></i> {this.props.title}
                     </NavLeft>  
                 </Nav>
         );
