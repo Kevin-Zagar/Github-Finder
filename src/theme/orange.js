@@ -1,6 +1,6 @@
 const OrangeTheme = {
-    backgroundColor: 'peru',
-    primaryColor: 'whitesmoke'
+    primaryColor: 'peru',
+    text_color: '#fff'
 };
 
 

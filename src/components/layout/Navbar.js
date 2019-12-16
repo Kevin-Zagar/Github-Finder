@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 const Nav = styled.div `
     display: flex;
     position: sticky;
-    background: ${props => props.theme.backgroundColor};
+    background: ${props => props.theme.primaryColor};
     top: 0;
-    color: #fff;
+    color: ${props => props.theme.text_color};
     justify-content: space-between;
     z-index: 1;
     padding: 16px; 

@@ -22,8 +22,6 @@ const Button = styled.button`
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-
-
 `;
 
 export class UserItem extends Component {
@@ -42,7 +40,6 @@ export class UserItem extends Component {
                     <Image src={this.state.avatar_url}></Image>
                     <h3>{this.state.login}</h3>
                     <Button>Profile</Button>
-                    
                 </Card>
         )
     }
