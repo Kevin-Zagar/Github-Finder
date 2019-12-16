@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import { FaGithub } from "react-icons/fa";
-
-
+import PropTypes from 'prop-types';
 
 const Nav = styled.div `
     display: flex;
     position: sticky;
-    background: peru;
+    background: ${props => props.theme.backgroundColor};
     top: 0;
     color: #fff;
     justify-content: space-between;
@@ -26,6 +24,10 @@ export class Navbar extends Component {
         icon: 'fab fa-github'
     };
 
+    static propTypes = {
+        title: PropTypes.string.isRequired,
+        icon: PropTypes.string.isRequired
+    };
 
     render() {
         return (
