@@ -3,32 +3,39 @@ import styled from 'styled-components';
 import { FaGithub } from "react-icons/fa";
 
 
+
 const Nav = styled.div `
-background: peru;
-color: #fff;
-padding: 20px;
-overflow: auto;
+    display: flex;
+    position: sticky;
+    background: peru;
+    top: 0;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 16px; 
 `;
 
-const NavLeft = styled.div`
-width: 33.333%;
-text-align: center;
-font-size: 25px;
-font-weight: bold;
+const NavLeft = styled.h2`
+    width: 33.333%;
+    text-align: center;
 `;
- 
+
 export class Navbar extends Component {
+    static defaultProps = {
+        title: 'Github Finder',
+        icon: 'fab fa-github'
+    };
+
+
     render() {
         return (
                 <Nav className="navbar">
                     <NavLeft>
-                     <FaGithub size={23}></FaGithub> {this.props.title}
+                        <i className={this.props.icon}></i> {this.props.title}
                     </NavLeft>  
                 </Nav>
         );
     }
 }
-    /*
-    <div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    */        
+
 export default Navbar;

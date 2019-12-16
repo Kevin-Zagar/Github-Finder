@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
+import './App.css'; 
 import Navbar from './components/layout/Navbar';
+
 
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <Navbar title='Github Finder'>
+        <Navbar title='Github Finder' icon='fab fa-github' >
           
         </Navbar>
       </div>
