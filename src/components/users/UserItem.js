@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import Button from '../common/Button';
 
 const Card = styled.div`
     margin: 30px;
@@ -12,16 +12,6 @@ const Card = styled.div`
 const Image = styled.img`
     border-radius:50%;
     width: 60px;
-`;
-
-const Button = styled.button`
-    display: inline-block;
-    color: #fff;
-    background: peru;
-    padding: 5px 32px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
 `;
 
 export class UserItem extends Component {
@@ -45,4 +35,4 @@ export class UserItem extends Component {
     }
 }
 
-export default UserItem
+export default UserItem;

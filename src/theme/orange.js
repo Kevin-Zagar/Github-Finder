@@ -3,6 +3,4 @@ const OrangeTheme = {
     text_color: '#fff'
 };
 
-
-
 export default OrangeTheme;
