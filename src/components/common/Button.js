@@ -9,6 +9,10 @@ const Button = styled.button `
     border-radius: 5px;
     margin-top: 10px;
     display: inline-block;
+
+    :hover {
+        background: ${props => props.theme.darkerPrimaryColor};
+    }
 `;
 
 export default Button;
